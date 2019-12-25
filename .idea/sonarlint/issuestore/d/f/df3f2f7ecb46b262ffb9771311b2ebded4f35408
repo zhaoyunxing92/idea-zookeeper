@@ -1,0 +1,12 @@
+
+o
+squid:S135w"YReduce the total number of break and continue statements in this loop to use at most one.(¬÷Åô
+?squid:S1604d"(Make this anonymous inner class a lambda(°…µí
+˜squid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô¤»å
+˜squid:S1186R"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ú«Õ—
+squid:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ù¡µšøÿÿÿÿ
+Asquid:S00108?")Either remove or fill this block of code.(ìŠÈ
+usquid:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(•ĞŒÃûÿÿÿÿ
+Asquid:S00108o")Either remove or fill this block of code.(ìŠÈ
+dsquid:S1871{"MThis branch's code block is the same as the block for the branch on line 120.(‚’£Ş
+asquid:S3027{"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(‚’£Ş

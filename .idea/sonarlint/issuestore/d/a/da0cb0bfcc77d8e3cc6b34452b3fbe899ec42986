@@ -1,0 +1,10 @@
+
+~"squid:ClassVariableVisibilityCheck"PMake host a static final constant or non-public and provide accessors if needed.(Ö«êú
+]squid:S3027="FPut single-quotes around ',' to use the faster "indexOf(char)" method.(ÁÇ˜º
+usquid:S4144:"^Update this method so that its implementation is not identical to "getFirstServer" on line 50.(òô¢Ë
+]squid:S30275"FPut single-quotes around ',' to use the faster "indexOf(char)" method.(ÁÇ˜º
+"squid:ClassVariableVisibilityCheck"SMake charset a static final constant or non-public and provide accessors if needed.(¥±”¼
+†"squid:ClassVariableVisibilityCheck"SMake tooltip a static final constant or non-public and provide accessors if needed.(¶èÌìıÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"SMake enabled a static final constant or non-public and provide accessors if needed.(Œ¬È
+~"squid:ClassVariableVisibilityCheck"PMake port a static final constant or non-public and provide accessors if needed.(Œ•é‘
+‰"squid:ClassVariableVisibilityCheck"VMake whitePaths a static final constant or non-public and provide accessors if needed.(àæ“¿üÿÿÿÿ

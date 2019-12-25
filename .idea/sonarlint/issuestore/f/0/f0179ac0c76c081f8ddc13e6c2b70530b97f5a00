@@ -1,0 +1,5 @@
+
+fsquid:S3027^"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ό”λωÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"UMake ROOT_NAME a static final constant or non-public and provide accessors if needed.(Ν±«¦ώÿÿÿÿ
+psquid:S3008"TRename this field "ROOT_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ν±«¦ώÿÿÿÿ
+Ksquid:S1444"/Make this "public static ROOT_NAME" field final(Ν±«¦ώÿÿÿÿ

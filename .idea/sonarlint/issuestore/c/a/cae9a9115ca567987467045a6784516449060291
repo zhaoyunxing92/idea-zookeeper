@@ -1,0 +1,9 @@
+
+˜squid:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²Êº
+`squid:UselessImportCheck"7Remove this unused import 'com.intellij.util.IconUtil'.(µ´Ìûÿÿÿÿ
+Nsquid:S2696«"6Make the enclosing method "static" or remove this set.(¢­ÿÖ
+\squid:S2095Î"DUse try-with-resources or close this "Socket" in a "finally" clause.(İçè®
+Vsquid:UselessImportCheck+"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+isquid:S3776U"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(±É—®
+Msquid:S2696Z"6Make the enclosing method "static" or remove this set.(ç·àÑ
+squid:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Èı¸úÿÿÿÿ

@@ -1,0 +1,14 @@
+
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8Ïê²éó-
+Asquid:S00108g")Either remove or fill this block of code.(ìŠÈ
+Bsquid:S1075Y"&Remove this hard-coded path-delimiter.(â”Ê’ûÿÿÿÿ
+squid:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®¶‘ıÿÿÿÿ
+=squid:S1075d"&Remove this hard-coded path-delimiter.(—Â®³
+˜squid:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìÉ´Æ
+Asquid:S00108C")Either remove or fill this block of code.(ìŠÈ
+Bsquid:S1075T"&Remove this hard-coded path-delimiter.(¯Ö‡¯üÿÿÿÿ
+Asquid:S00108\")Either remove or fill this block of code.(ìŠÈ
+Nsquid:S1135o"2Complete the task associated to this TODO comment.(ñ•Ôøÿÿÿÿ
+Asquid:S00108M")Either remove or fill this block of code.(ìŠÈ
+Asquid:S00108p")Either remove or fill this block of code.(ìŠÈ
+squid:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ıóªÁÿÿÿÿÿ

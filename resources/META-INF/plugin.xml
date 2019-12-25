@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<idea-plugin>
+  <id>idea-zookeeper</id>
+  <name>idea zooKeezper</name>
+  <version>0.1</version>
+  <vendor email="2385585770@qq.com" url="https://github.com/zhaoyunxing92">
+    zhaoyunxing92
+  </vendor>
+
+  <description><![CDATA[<html><body>
+    	管理zookeeper的idea插件本代码是根据https://github.com/linux-china/zookeeper-intellij修改过来的，解决了一些npe异常
+    	<ul>
+    		<li>Double click the leaf to edit node value</li>
+    		<li>Right click editor to update node value into ZooKeeper</li>
+    		<li>Right click ZK tree to execute "edit", "add" and "delete" operation</li>
+    		<li>Recursive support for add and delete operation</li>
+    		<li>Node filter support</li>
+    		<li>Click "Refresh" button on "ZooKeeper" tool window to refress ZK tree or node</li>
+    		<li>Icon for different type, and transparent icon for ephemeral node</li>
+    		<li>Stat tooltip, Copy node path</li>
+    	</ul>
+    	</body></html>]]>
+  </description>
+
+  <change-notes><![CDATA[<html><body>
+         <ul>
+             <li>0.1: initial version</li>
+         </ul>
+        </body></html>]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="181"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+    <component>
+      <implementation-class>org.mvnsearch.intellij.plugin.zookeeper.ZkProjectComponent</implementation-class>
+    </component>
+  </project-components>
+
+  <actions>
+    <group id="ZK.Toolbar" text="ZooKeeper ToolBar">
+      <action id="ZkTreeRefreshAction" class="org.mvnsearch.intellij.plugin.zookeeper.actions.ZkTreeRefreshAction"
+              icon="/icons/refresh.png" text="Refresh" description="Refresh ZooKeeper"/>
+    </group>
+    <group id="ZK.OperationMenu" text="ZooKeeper Operations" popup="true">
+      <action id="Open in Editor" class="org.mvnsearch.intellij.plugin.zookeeper.actions.OpenZkNodeInEditorAction"
+              icon="/icons/edit.png" text="Open in Editor"/>
+      <separator/>
+      <action id="Create Child Node" class="org.mvnsearch.intellij.plugin.zookeeper.actions.CreateNodeAction"
+              icon="/icons/new.png" text="Create Node"/>
+      <separator/>
+      <action id="Delete Node" class="org.mvnsearch.intellij.plugin.zookeeper.actions.DeleteNodeAction"
+              icon="/icons/delete.png" text="Delete Node"/>
+      <separator/>
+      <action id="Copy Node Path" class="org.mvnsearch.intellij.plugin.zookeeper.actions.CopyNodePathAction"
+              icon="/icons/copy.png" text="Copy Node Path"/>
+    </group>
+    <action id="UpdateZkNodeAction" class="org.mvnsearch.intellij.plugin.zookeeper.actions.UpdateZkNodeAction"
+            icon="/icons/zookeeper_small.png" text="Update ZK Node" description="Update ZooKeeper Node">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <projectConfigurable instance="org.mvnsearch.intellij.plugin.zookeeper.ui.ZkProjectConfigurable"/>
+    <projectService serviceInterface="org.mvnsearch.intellij.plugin.zookeeper.ZkConfigPersistence"
+                    serviceImplementation="org.mvnsearch.intellij.plugin.zookeeper.ZkConfigPersistence"/>
+    <!--<psi.referenceContributor implementation="org.mvnsearch.intellij.plugin.zookeeper.ZkNodePathReferenceContributor"/>-->
+  </extensions>
+</idea-plugin>
