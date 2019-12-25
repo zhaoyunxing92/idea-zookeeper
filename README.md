@@ -1,5 +1,5 @@
 # idea-zookeeper
-idea的zookeeper插件该代码是在[zookeeper-intellij](https://github.com/linux-china/zookeeper-intellij)基础上做了一些微调，并解决了npe等问题
+[idea-zookeeper]( https://github.com/zhaoyunxing92/idea-zookeeper )插件是在[zookeeper-intellij](https://github.com/linux-china/zookeeper-intellij)基础上做了一些微调，并解决了npe等问题
 
 ### 使用前注意
 
@@ -23,10 +23,17 @@ public boolean ruok(String server) {
 }
 ```
 
-所以在使用在配置`zoo.cfg`开启，不然会报错
+所以在zookeeper配置`conf/zoo.cfg`开启，不然会报错
 
 ``` shell
 # 可以指定开启ruok，全部开启 *
 4lw.commands.whitelist=ruok
 ```
 
+但是有的时候zookeeper是你不能修改的，但是你又想用这个插件，你可以在源码里面注释上面的代码重新打包即可
+
+再次感谢[zookeeper-intellij](https://github.com/linux-china/zookeeper-intellij)提供的源码
+
+### 插件怎么编译
+
+关于这个问题可以去看[IDEA插件开发]( https://www.jianshu.com/p/722841c6d0a9 )不赘述
